@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug Bot",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "node",
+        "runtimeArgs": ["--loader", "ts-node/esm", "--preserve-symlinks"],
+  
+        "args": ["src/Bot.ts"],
+        
+        "cwd": "${workspaceRoot}",
+        "internalConsoleOptions": "openOnSessionStart",
+        "skipFiles": ["<node_internals>/**", "node_modules/**"],
+        
+      }
+    ]
+}
