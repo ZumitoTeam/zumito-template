@@ -22,7 +22,7 @@
   "dependencies": {
     "discord.js": "^14.2.0",
     "dotenv": "^10.0.0",
-    "zumito-framework": "^1.1.61"
+    "zumito-framework": "^1.1.63"
   },
   "devDependencies": {
     "@types/node": "^18.7.8",
