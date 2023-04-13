@@ -3,6 +3,7 @@ import { DatabaseConfigLoader, ZumitoFramework } from 'zumito-framework';
 import dotenv from 'dotenv'
 dotenv.config()
 
+import { config } from './config/index.js';
  
 if (!process.env.TOKEN) {
     throw new Error("Discord Token not found");
@@ -21,6 +22,7 @@ new ZumitoFramework({
     defaultPrefix: process.env.BOTPREFIX || "z-",
     database: DatabaseConfigLoader.getFromEnv(),
     logLevel: parseInt(process.env.LOGLEVEL || "3"),
+    statusOptions: config.statusOptions,
 }, (bot: ZumitoFramework) => { // Callback function when bot is ready
     // Log number of commands loaded
     console.log(`Loaded ${bot.commands.size} commands`);
