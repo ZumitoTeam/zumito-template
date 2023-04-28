@@ -4,6 +4,7 @@
   "description": "Multipurpose discord bot",
   "scripts": {
     "start": "ts-node-esm src/Bot.ts",
+    "dev": "ts-node-esm src/Bot.ts --debug",
     "zumito-cli": "generate"
   },
   "repository": {
