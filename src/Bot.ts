@@ -5,9 +5,9 @@ dotenv.config()
 
 import { config } from './config/index.js';
  
-if (!process.env.TOKEN) {
+if (!process.env.DISCORD_TOKEN) {
     throw new Error("Discord Token not found");
-} else if (!process.env.CLIENT_ID) {
+} else if (!process.env.DISCORD_CLIENT_ID) {
     throw new Error("Discord Client ID not found");
 } else if (!process.env.DATABASE_TYPE) {
     throw new Error("No database type specified in .env file");
@@ -16,10 +16,10 @@ if (!process.env.TOKEN) {
 new ZumitoFramework({
     discordClientOptions: {
         intents: 3276799,
-        token: process.env.TOKEN!,
-        clientId: process.env.CLIENT_ID!,
+        token: process.env.DISCORD_TOKEN!,
+        clientId: process.env.DISCORD_CLIENT_ID!,
     },
-    defaultPrefix: process.env.BOTPREFIX || "z-",
+    defaultPrefix: process.env.BOT_PREFIX || "z-",
     database: DatabaseConfigLoader.getFromEnv(),
     logLevel: parseInt(process.env.LOGLEVEL || "3"),
     statusOptions: config.statusOptions,
