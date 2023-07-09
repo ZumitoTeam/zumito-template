@@ -1,4 +1,4 @@
-import { ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder, GuildMember } from "discord.js";
+import { ActionRowBuilder, ButtonBuilder, ButtonStyle } from "zumito-framework/discord";
 import { ButtonPressed, ButtonPressedParams, Command, CommandArgDefinition, CommandParameters,  CommandType, SelectMenuParameters} from "zumito-framework";
 
 export class MessageWithButtons extends Command implements ButtonPressed {
