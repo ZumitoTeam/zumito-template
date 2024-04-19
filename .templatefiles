@@ -1,0 +1,4 @@
+# Files on template project that doesnt need to be in a real project
+
+.templatefiles
+CONTRIBUTING.md
