@@ -21,7 +21,7 @@ new ZumitoFramework({
     },
     defaultPrefix: process.env.BOT_PREFIX || "z-",
     database: DatabaseConfigLoader.getFromEnv(),
-    logLevel: parseInt(process.env.LOGLEVEL || "3"),
+    logLevel: parseInt(process.env.LOG_LEVEL || "3"),
     statusOptions: config.statusOptions,
 }, (bot: ZumitoFramework) => { // Callback function when bot is ready
     // Log number of commands loaded
