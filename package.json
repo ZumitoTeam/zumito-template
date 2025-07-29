@@ -23,7 +23,7 @@
   "dependencies": {
     "discord.js": "^14.14.1",
     "dotenv": "^16.0.3",
-    "zumito-framework": "^1.2.18"
+    "zumito-framework": "^1.13.1"
   },
   "devDependencies": {
     "@jsdevtools/version-bump-prompt": "^6.1.0",
