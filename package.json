@@ -3,9 +3,8 @@
   "version": "1.2.23",
   "description": "Multipurpose discord bot",
   "scripts": {
-    "start": "tsx src/Bot.ts",
-    "dev": "tsx src/Bot.ts --debug",
-    "zumito-cli": "generate"
+    "start": "tsx node_modules/.bin/zumito-framework",
+    "dev": "DEBUG=true npm run start"
   },
   "repository": {
     "type": "git",
