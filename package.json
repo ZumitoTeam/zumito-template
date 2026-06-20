@@ -3,8 +3,8 @@
   "version": "1.2.23",
   "description": "Multipurpose discord bot",
   "scripts": {
-    "start": "tsx node_modules/.bin/zumito-framework",
-    "dev": "DEBUG=true npm run start"
+    "start": "tsx ./node_modules/zumito-framework/dist/launcher.js",
+    "dev": "DEBUG=true tsx ./node_modules/zumito-framework/dist/launcher.js"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,8 @@
     "@config": "config"
   },
   "dependencies": {
-    "discord.js": "^14.14.1",
     "dotenv": "^16.0.3",
-    "zumito-framework": "^1.13.1"
+    "zumito-framework": "^1.22.2"
   },
   "devDependencies": {
     "@jsdevtools/version-bump-prompt": "^6.1.0",

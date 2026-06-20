@@ -5,9 +5,10 @@
         "rootDir": "./src/",
         "outDir": "./dist/",
         "strict": true,
-        "moduleResolution": "node",
+        "moduleResolution": "bundler",
         "importHelpers": true,
         "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
         "allowSyntheticDefaultImports": true,
@@ -18,33 +19,16 @@
             "node_modules/@types"
         ],
         "sourceMap": false,
-        "baseUrl": "./",
         "declaration": true,
         "lib": [
             "ESNext"
         ],
     },
-    "ts-node": {
-        "compilerOptions": {
-            "module": "ESNext",
-            "target": "ESNext",
-            "esModuleInterop": true,
-            "allowSyntheticDefaultImports": true,
-            "declaration": true,
-            "lib": [
-                "ESNext"
-            ],
-            "moduleResolution": "node",
-        }
-    },
-    "files": [
-        "src/Bot.ts"
-    ],
     "include": [
-        "./**/*.ts",
+        "src/**/*.ts"
     ],
     "exclude": [
         "node_modules",
         "dist"
-    ],
+    ]
 }
