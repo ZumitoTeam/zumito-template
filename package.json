@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "zumito-framework": "^1.22.2"
+    "zumito-framework": "^1.24.0"
   },
   "devDependencies": {
     "@jsdevtools/version-bump-prompt": "^6.1.0",
